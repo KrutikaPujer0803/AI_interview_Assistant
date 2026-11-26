@@ -15,3 +15,13 @@ st.caption(
 
 st.caption("Launched by Krutika")
 st.write("Department of AI&DS")
+
+st.title('AI Interview Assistant')
+st.caption('Practice Interviews with AI-generated questions')
+try:
+    client = Groq(api_key=st.secrets['GROQ_API_KEY'])
+    st.write("API connect successful")
+except (KeyError, FileNotFoundError):
+    st.error('GROQ_API_KEY is missing.Add it to streamlit cloud -->App setting')
+  st.stop()
+
