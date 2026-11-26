@@ -44,7 +44,7 @@ if st.button("Generate Interview Questions"):
         {"role": "user", "content": prompt}
     ]
 )
-output = response.choice[0].message.content
+output = response.choices[0].message.content
 st.write(output)
              
              
