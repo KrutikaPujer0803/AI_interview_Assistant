@@ -23,5 +23,5 @@ try:
     st.write("API connect successful")
 except (KeyError, FileNotFoundError):
     st.error('GROQ_API_KEY is missing.Add it to streamlit cloud -->App setting')
-  st.stop()
+    st.stop()
 
